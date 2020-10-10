@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d9e8e9e-5ae4-4423-a10b-2cdfd7ad0c93" name="Default Changelist" comment="" />
+    <list default="true" id="8d9e8e9e-5ae4-4423-a10b-2cdfd7ad0c93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testing_depth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decision_trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decision_trees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_Implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pruning.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +35,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iY1geiV8ulQ0qVdsD5ihkDzpFx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -135,9 +147,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Testing_depth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Decision_Trees" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing_depth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.My_Implementation" />
+        <item itemvalue="Python.Testing_depth" />
         <item itemvalue="Python.Decision_trees" />
         <item itemvalue="Python.Decision_code" />
         <item itemvalue="Python.Learn" />
@@ -159,7 +194,7 @@
       <workItem from="1602160665117" duration="19545000" />
       <workItem from="1602252827206" duration="8102000" />
       <workItem from="1602271084074" duration="1663000" />
-      <workItem from="1602274183490" duration="16067000" />
+      <workItem from="1602274183490" duration="50112000" />
     </task>
     <servers />
   </component>
@@ -171,14 +206,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602086858407" />
-    <state x="515" y="121" key="#xdebugger.evaluate" timestamp="1602291790233">
+    <state x="515" y="121" key="#xdebugger.evaluate" timestamp="1602348529378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="515" y="121" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1602291790233" />
-    <state width="1446" height="466" key="DebuggerActiveHint" timestamp="1602291837574">
+    <state x="515" y="121" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1602348529378" />
+    <state width="1446" height="466" key="DebuggerActiveHint" timestamp="1602358670914">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1446" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1602291837574" />
+    <state width="1446" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1602358670914" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1602070837382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -187,42 +222,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="603" y="329" width="354" height="165" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1602292411733" />
-    <state width="1493" height="291" key="GridCell.Tab.0.bottom" timestamp="1602292240238">
+    <state width="1493" height="373" key="GridCell.Tab.0.bottom" timestamp="1602367791713">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602292240238" />
-    <state width="1493" height="291" key="GridCell.Tab.0.center" timestamp="1602292240237">
+    <state width="1493" height="373" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
+    <state width="1493" height="373" key="GridCell.Tab.0.center" timestamp="1602367791713">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602292240237" />
-    <state width="1493" height="291" key="GridCell.Tab.0.left" timestamp="1602292240237">
+    <state width="1493" height="373" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
+    <state width="1493" height="373" key="GridCell.Tab.0.left" timestamp="1602367791713">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602292240237" />
-    <state width="1493" height="291" key="GridCell.Tab.0.right" timestamp="1602292240238">
+    <state width="1493" height="373" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
+    <state width="1493" height="373" key="GridCell.Tab.0.right" timestamp="1602367791713">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602292240238" />
-    <state width="1493" height="246" key="GridCell.Tab.1.bottom" timestamp="1602292180454">
+    <state width="1493" height="373" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
+    <state width="1493" height="246" key="GridCell.Tab.1.bottom" timestamp="1602358961823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602292180454" />
-    <state width="1493" height="246" key="GridCell.Tab.1.center" timestamp="1602292180454">
+    <state width="1493" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
+    <state width="1493" height="246" key="GridCell.Tab.1.center" timestamp="1602358961823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602292180454" />
-    <state width="1493" height="246" key="GridCell.Tab.1.left" timestamp="1602292180454">
+    <state width="1493" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
+    <state width="1493" height="246" key="GridCell.Tab.1.left" timestamp="1602358961823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602292180454" />
-    <state width="1493" height="246" key="GridCell.Tab.1.right" timestamp="1602292180454">
+    <state width="1493" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
+    <state width="1493" height="246" key="GridCell.Tab.1.right" timestamp="1602358961823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602292180454" />
-    <state width="775" height="411" key="XDebugger.FullValuePopup" timestamp="1602272575923">
+    <state width="1493" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
+    <state width="775" height="411" key="XDebugger.FullValuePopup" timestamp="1602297576121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="775" height="411" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1602272575923" />
+    <state width="775" height="411" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1602297576121" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1602271104786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -238,7 +273,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Decision_trees.py</url>
-          <line>88</line>
+          <line>92</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -258,26 +293,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/My_Implementation.py</url>
-          <line>128</line>
-          <option name="timeStamp" value="45" />
+          <line>328</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Decision_trees.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Decision_trees.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="50" />
+          <url>file://$PROJECT_DIR$/My_Implementation.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Decision_Trees$Decision_code.coverage" NAME="Decision_code Coverage Results" MODIFIED="1602276940960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Decision_Trees$My_Implementation.coverage" NAME="My_Implementation Coverage Results" MODIFIED="1602292188715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Decision_Trees$My_Implementation.coverage" NAME="My_Implementation Coverage Results" MODIFIED="1602367791708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Decision_Trees$Testing_depth.coverage" NAME="Testing_depth Coverage Results" MODIFIED="1602359346705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Decision_Trees$Learn.coverage" NAME="Learn Coverage Results" MODIFIED="1602088790202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Decision_Trees$Decision_trees.coverage" NAME="Decision_trees Coverage Results" MODIFIED="1602292180443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Decision_Trees$Decision_trees.coverage" NAME="Decision_trees Coverage Results" MODIFIED="1602346850791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

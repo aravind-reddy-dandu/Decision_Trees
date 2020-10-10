@@ -77,15 +77,19 @@ def genPruningData(m):
     return dataset
 
 
-# data = genPruningData(10)
-# pprint(data)
-
-# data = genTrainingData(4, 30)
-# # print(data)
-# filename = 'D:/Study/ML/Decision_trees/data.csv'
-# # # pd.
-# df = pd.DataFrame.from_dict(data)
-# df.to_csv(filename,index=False)
+# data = genPruningData(10000)
+# # pprint(data)
+#
+# # data = genTrainingData(4, 30)
+# # # print(data)
+# trainfile = 'D:/Study/ML/Decision_trees/data_pruning_train.csv'
+# testfile = 'D:/Study/ML/Decision_trees/data_pruning_test.csv'
+# data = pd.DataFrame.from_dict(data)
+# # # # pd.
+# df_train = pd.DataFrame.from_dict(data.iloc[:8000].reset_index(drop=True))
+# df_test = pd.DataFrame.from_dict(data.iloc[8000:].reset_index(drop=True))
+# df_train.to_csv(trainfile, index=False)
+# df_test.to_csv(testfile, index=False)
 # with open(filename, 'w', newline='') as csvfile:
 #     csvwriter = csv.writer(csvfile)
 #     csvwriter.writerow(data[0].keys())
