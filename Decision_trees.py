@@ -77,10 +77,15 @@ def genPruningData(m):
     return dataset
 
 
+
 # data = genPruningData(10000)
 # # pprint(data)
 #
-# # data = genTrainingData(4, 30)
+# data = genTrainingData(4, 10)
+# pprint(data)
+# data = pd.DataFrame.from_dict(data)
+# pprint(data)
+# data.to_csv('test.csv')
 # # # print(data)
 # trainfile = 'D:/Study/ML/Decision_trees/data_pruning_train.csv'
 # testfile = 'D:/Study/ML/Decision_trees/data_pruning_test.csv'

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d9e8e9e-5ae4-4423-a10b-2cdfd7ad0c93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing_depth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Decision_trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decision_trees.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/My_Implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_Implementation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pruning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pruning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.My_Implementation">
     <configuration name="Decision_code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -172,8 +169,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.My_Implementation" />
-        <item itemvalue="Python.Testing_depth" />
         <item itemvalue="Python.Decision_trees" />
+        <item itemvalue="Python.Testing_depth" />
         <item itemvalue="Python.Decision_code" />
         <item itemvalue="Python.Learn" />
       </list>
@@ -194,26 +191,42 @@
       <workItem from="1602160665117" duration="19545000" />
       <workItem from="1602252827206" duration="8102000" />
       <workItem from="1602271084074" duration="1663000" />
-      <workItem from="1602274183490" duration="50112000" />
+      <workItem from="1602274183490" duration="66932000" />
     </task>
+    <task id="LOCAL-00001" summary="version 2">
+      <created>1602367854854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602367854854</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="version 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602086858407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602086858407" />
-    <state x="515" y="121" key="#xdebugger.evaluate" timestamp="1602348529378">
+    <state x="515" y="121" key="#xdebugger.evaluate" timestamp="1602369838926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="515" y="121" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1602348529378" />
-    <state width="1446" height="466" key="DebuggerActiveHint" timestamp="1602358670914">
+    <state x="515" y="121" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1602369838926" />
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1602367854218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1446" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1602358670914" />
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602367854218" />
+    <state width="1447" height="466" key="DebuggerActiveHint" timestamp="1602375030683">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1447" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1602375030683" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1602070837382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,38 +235,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="603" y="329" width="354" height="165" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1602292411733" />
-    <state width="1493" height="373" key="GridCell.Tab.0.bottom" timestamp="1602367791713">
+    <state width="1493" height="319" key="GridCell.Tab.0.bottom" timestamp="1602464261966">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="373" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
-    <state width="1493" height="373" key="GridCell.Tab.0.center" timestamp="1602367791713">
+    <state width="1493" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602464261966" />
+    <state width="1493" height="319" key="GridCell.Tab.0.center" timestamp="1602464261966">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="373" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
-    <state width="1493" height="373" key="GridCell.Tab.0.left" timestamp="1602367791713">
+    <state width="1493" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602464261966" />
+    <state width="1493" height="319" key="GridCell.Tab.0.left" timestamp="1602464261965">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="373" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
-    <state width="1493" height="373" key="GridCell.Tab.0.right" timestamp="1602367791713">
+    <state width="1493" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602464261965" />
+    <state width="1493" height="319" key="GridCell.Tab.0.right" timestamp="1602464261966">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="373" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602367791713" />
-    <state width="1493" height="246" key="GridCell.Tab.1.bottom" timestamp="1602358961823">
+    <state width="1493" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602464261966" />
+    <state width="1493" height="246" key="GridCell.Tab.1.bottom" timestamp="1602375040663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
-    <state width="1493" height="246" key="GridCell.Tab.1.center" timestamp="1602358961823">
+    <state width="1493" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602375040663" />
+    <state width="1493" height="246" key="GridCell.Tab.1.center" timestamp="1602375040663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
-    <state width="1493" height="246" key="GridCell.Tab.1.left" timestamp="1602358961823">
+    <state width="1493" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602375040663" />
+    <state width="1493" height="246" key="GridCell.Tab.1.left" timestamp="1602375040663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
-    <state width="1493" height="246" key="GridCell.Tab.1.right" timestamp="1602358961823">
+    <state width="1493" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602375040663" />
+    <state width="1493" height="246" key="GridCell.Tab.1.right" timestamp="1602375040663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602358961823" />
+    <state width="1493" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602375040663" />
+    <state x="277" y="56" key="SettingsEditor" timestamp="1602376609411">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602376609411" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1602367856739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602367856739" />
     <state width="775" height="411" key="XDebugger.FullValuePopup" timestamp="1602297576121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -273,7 +294,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Decision_trees.py</url>
-          <line>92</line>
+          <line>97</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -293,22 +314,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/My_Implementation.py</url>
-          <line>328</line>
+          <line>406</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/My_Implementation.py</url>
-          <line>79</line>
+          <line>98</line>
           <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/My_Implementation.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Decision_Trees$Decision_code.coverage" NAME="Decision_code Coverage Results" MODIFIED="1602276940960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Decision_Trees$My_Implementation.coverage" NAME="My_Implementation Coverage Results" MODIFIED="1602367791708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Decision_Trees$My_Implementation.coverage" NAME="My_Implementation Coverage Results" MODIFIED="1602464261961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Decision_Trees$Testing_depth.coverage" NAME="Testing_depth Coverage Results" MODIFIED="1602359346705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Decision_Trees$Learn.coverage" NAME="Learn Coverage Results" MODIFIED="1602088790202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Decision_Trees$Decision_trees.coverage" NAME="Decision_trees Coverage Results" MODIFIED="1602346850791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Decision_Trees$Decision_trees.coverage" NAME="Decision_trees Coverage Results" MODIFIED="1602378402195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

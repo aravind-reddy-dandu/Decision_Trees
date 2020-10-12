@@ -30,6 +30,20 @@ def getInformationContent(col):
     return value
 
 
+def getGiniIndex(data, target_attr):
+    return 1 - (len(data[data[target_attr] == 1]) / len(data)) ** 2 - (
+                len(data[data[target_attr] == 0]) / len(data)) ** 2
+
+
+def getGiniGain(attr_split, data, target):
+    gini = np.inf
+    for value in np.unique(data[attr_split]):
+        sub_data = data.where(data[attr_split] == value).dropna()
+        gini = min(getGiniIndex(sub_data, target), gini)
+    print('Gini of ' + attr_split + ' is ' + str(gini))
+    return gini
+
+
 def getInfoGain(attr_split, data, target):
     targetInfo = getInformationContent(data[target])
     # Now find conditional infocontent
@@ -42,7 +56,7 @@ def getInfoGain(attr_split, data, target):
     return infoGain
 
 
-def runID3algorithmtree(data, features, compute_attr="y", leaf=None):
+def runID3algorithmtree(data, features, compute_attr="y", leaf=None, splitCond='info'):
     if len(np.unique(data[compute_attr])) <= 1:
         return np.unique(data[compute_attr])[0]
     elif len(data) == 0:
@@ -62,14 +76,19 @@ def runID3algorithmtree(data, features, compute_attr="y", leaf=None):
         else:
             leaf = 0
         info_gains = {}
-        for feature in features:
-            info_gains[getInfoGain(feature, data, compute_attr)] = feature
+        if splitCond == 'info':
+            for feature in features:
+                info_gains[getInfoGain(feature, data, compute_attr)] = feature
+        elif splitCond == 'gini':
+            for feature in features:
+                info_gains[getGiniGain(feature, data, compute_attr)] = feature
+        # print(info_gains)
         max_info_gain_attr = info_gains[max(info_gains.keys())]
         tree = {max_info_gain_attr: {}}
         features = [i for i in features if i != max_info_gain_attr]
         for value in np.unique(data[max_info_gain_attr]):
             sub_data = data.where(data[max_info_gain_attr] == value).dropna()
-            subtree = runID3algorithmtree(sub_data, features, compute_attr, leaf)
+            subtree = runID3algorithmtree(sub_data, features, compute_attr, leaf, splitCond)
             tree[max_info_gain_attr][value] = subtree
         return tree
 
@@ -121,10 +140,10 @@ def runID3algorithmtreePruning(data, features, compute_attr="y", leaf=None, maxd
         return tree
 
 
-def runID3algorithmtreeSamplePruning(data, features, compute_attr="y", leaf=None, maxdepth=None, tree=None, currdepth=0):
-    if maxdepth is not None:
+def runID3algorithmtreeSamplePruning(data, features, compute_attr="y", leaf=None, tree=None, sample_size=None):
+    if sample_size is not None:
         if tree is not None:
-            if maxdepth == currdepth:
+            if len(data.index) <= sample_size:
                 truecnt = 0
                 flscnt = 0
                 for i, v in data[compute_attr].items():
@@ -160,10 +179,9 @@ def runID3algorithmtreeSamplePruning(data, features, compute_attr="y", leaf=None
         max_info_gain_attr = info_gains[max(info_gains.keys())]
         tree = {max_info_gain_attr: {}}
         features = [i for i in features if i != max_info_gain_attr]
-        currdepth = currdepth + 1
         for value in np.unique(data[max_info_gain_attr]):
             sub_data = data.where(data[max_info_gain_attr] == value).dropna()
-            subtree = runID3algorithmtreePruning(sub_data, features, compute_attr, leaf, maxdepth, tree, currdepth)
+            subtree = runID3algorithmtreeSamplePruning(sub_data, features, compute_attr, leaf, tree, sample_size)
             tree[max_info_gain_attr][value] = subtree
         return tree
 
@@ -293,10 +311,10 @@ def find_depth(tree, depth=0):
 
 def prune_tree_by_depth():
     store = []
-    for i in [-1]:
+    for i in range(1, 14):
         prune_depth = i
         df_train = pd.read_csv('D:/Study/ML/Decision_trees/data_pruning_train.csv')
-        df_test = pd.read_csv('D:/Study/ML/Decision_trees/data_pruning_test.csv')
+        df_test = pd.read_csv('D:/Study/ML/Decision_trees/data_pruning_train.csv')
         tree = runID3algorithmtreePruning(df_train, df_train.columns[:-1], maxdepth=prune_depth)
         pprint(tree)
         print(find_depth(tree))
@@ -307,11 +325,70 @@ def prune_tree_by_depth():
                 succescnt = succescnt + 1
         test_accuracy = succescnt * 100 / len(df_test.index)
         print('Training error is ' + str(test_accuracy))
-        store.append(str(prune_depth)+ ',' + str(100-test_accuracy))
+        store.append(str(prune_depth + 1) + ',' + str(100 - test_accuracy))
     for i in store:
         print(i)
 
-prune_tree_by_depth()
+
+def prune_tree_by_sample():
+    store = []
+    for i in range(100, 8000, 200):
+        sample_size = i
+        df_train = pd.read_csv('D:/Study/ML/Decision_trees/data_pruning_train.csv')
+        df_test = pd.read_csv('D:/Study/ML/Decision_trees/data_pruning_test.csv')
+        tree = runID3algorithmtreeSamplePruning(df_train, df_train.columns[:-1], sample_size=sample_size)
+        pprint(tree)
+        print(find_depth(tree))
+        yvalues = test_data_tree(df_test, tree)
+        succescnt = 0
+        for i, v in yvalues.iterrows():
+            if v['yvalues'] == df_test.iloc[i]['y']:
+                succescnt = succescnt + 1
+        test_accuracy = succescnt * 100 / len(df_test.index)
+        print('Training error is ' + str(test_accuracy))
+        store.append(str(sample_size) + ',' + str(100 - test_accuracy))
+    for i in store:
+        print(i)
+
+
+def spurious_by_depth():
+    store_dict = []
+    prune_depth = 8
+    for m in [100]:
+        training_data_points = m
+        data = None
+        data = Decision_trees.genPruningData(training_data_points)
+        df = pd.DataFrame.from_dict(data)
+        pprint(df)
+        tree = runID3algorithmtreePruning(df, df.columns[:-1], maxdepth=prune_depth)
+        pprint(tree)
+        noise = str(findNoiseinTree(tree))
+        print('Noise in tree is ' + noise)
+        store_dict.append(str(m) + ',' + str(noise))
+    for v in store_dict:
+        print(v)
+
+
+def spurious_by_sample():
+    store_dict = []
+    sample_size = 90
+    for m in range(100, 15000, 1000):
+        training_data_points = m
+        data = None
+        data = Decision_trees.genPruningData(training_data_points)
+        df = pd.DataFrame.from_dict(data)
+        pprint(df)
+        tree = runID3algorithmtreeSamplePruning(df, df.columns[:-1], sample_size=sample_size)
+        pprint(tree)
+        noise = str(findNoiseinTree(tree))
+        print('Noise in tree is ' + noise)
+        store_dict.append(str(m) + ',' + str(noise))
+    for v in store_dict:
+        print(v)
+
+
+# spurious_by_sample()
+# prune_tree_by_sample()
 # test_multiple_datapoints()
 # spit_variable = 80
 # store = []
@@ -325,7 +402,15 @@ prune_tree_by_depth()
 # for i in range(1,21):
 #     header.append(i)
 # header.append('y')
+
 # dftest = pd.read_csv('D:/Study/ML/Decision_trees/test.csv', sep=' ', header=None, names=header)
 # print()
 # tree = runID3algorithmtreePruning(dftest, dftest.columns[:-1], maxdepth=2)
 # pprint(tree)
+
+data = Decision_trees.genTrainingData(4, 100)
+data = pd.DataFrame.from_dict(data)
+pprint(data)
+tree = runID3algorithmtree(data, data.columns[:-1], splitCond='gini')
+pprint(tree)
+print(test_any_tree(tree, data))
